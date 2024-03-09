@@ -906,7 +906,7 @@ private:
     }
 };
 
-void show_triangle() {
+int main() {
     HelloTriangleApplication app;
 
     try {
@@ -915,35 +915,6 @@ void show_triangle() {
     catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
     }
-}
 
-int main() {
-    show_triangle();
     return EXIT_SUCCESS;
-    glfwInit();
-
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Advanced Computer Graphics in Game Development",
-                                          nullptr, nullptr);
-
-    uint32_t extensionCount = 0;
-    vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
-
-    std::cout << extensionCount << " extensions supported\n";
-
-    glm::mat4 matrix;
-    glm::vec4 vec{1.f, 2.f, 3.f, 4.f};
-    auto test = matrix * vec;
-    test += vec;
-
-
-    while(!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
-    }
-
-    glfwDestroyWindow(window);
-
-    glfwTerminate();
-
-    return 0;
 }
