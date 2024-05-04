@@ -39,7 +39,7 @@
 const uint32_t WIDTH = 800;
 const uint32_t HEIGHT = 600; 
 
-const std::string MODEL_PATH = "C:/Users/mixai/source/repos/Reelap13/cg-in-game-development/models/ObjModels/Main_Char.obj";
+const std::string MODEL_PATH = "C:/Users/mixai/source/repos/Reelap13/cg-in-game-development/ObjModels/Main_Char.obj";
 const std::string TEXTURE_PATH = "C:/Users/mixai/source/repos/Reelap13/cg-in-game-development/textures/texture.jpg";
 
 const int MAX_FRAMES_IN_FLIGHT = 2;
