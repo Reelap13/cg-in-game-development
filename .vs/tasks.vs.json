@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-src",
+      "appliesTo": "src/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-stb-master",
+      "appliesTo": "external/stb-master/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-main",
+      "appliesTo": "src/main.cpp",
+      "type": "launch"
+    }
+  ]
+}

@@ -11,3 +11,9 @@ find_package(Vulkan REQUIRED)
 add_executable(acg_in_gd_lab src/main.cpp)
 target_link_libraries(acg_in_gd_lab PRIVATE glfw glm::glm ${Vulkan_LIBRARIES})
 target_include_directories(acg_in_gd_lab PRIVATE ${Vulkan_INCLUDE_DIR})
+target_include_directories(acg_in_gd_lab PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/stb-master
+)
+target_include_directories(acg_in_gd_lab PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/tinyobjloader-release
+)
